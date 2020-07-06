@@ -1,5 +1,7 @@
-export { translateToAYes } from './utilities.js';
-
-if (question1 === true) {
-  return 'yes';
+export function translateToAYes(word) {
+  const firstLetter = word.charAt(0).toLowerCase;
+  if (firstLetter === 'y') {
+    return score++;
+  }
 }
+

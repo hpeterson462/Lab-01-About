@@ -98,6 +98,10 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+button :hover {
+    color: var(--color1);
+}
   
   @keyframes pulse {
     20% {

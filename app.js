@@ -3,20 +3,23 @@ import { translateToAYes } from './utilities.js';
 
 const button = document.getElementById('quiz-button');
 
+const result = document.getElementById('result-span');
 
+
+// initialize state
 button.addEventListener('click', () => {
   console.log('yes');
 
-  // initialize state
   const confirmQuiz = confirm('Do you really want to take this quiz?');
-
-  console.log(confirmQuiz);
+  if (confirmQuiz === false) {
+    return;
+  }
 
   const userName = prompt('What is your name?');
 
   console.log(userName);
 
-  const question1 = prompt('Are you from Oregon?');
+  const question1 = prompt('Do you like hiking?');
 
   console.log(question1);
 
@@ -24,12 +27,12 @@ button.addEventListener('click', () => {
 
   console.log(question2);
 
-  const question3 = prompt('Do you own a dog?');
+  const question3 = prompt('Are you from out of state?');
 
   console.log(question3);
 });
 
 // set event listeners to update state and DOM
-const result = document.getElementById('result-span');
 let score = 0;
-result.textContent(score);
+
+result.textContent = score;
