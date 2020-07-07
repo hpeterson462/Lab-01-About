@@ -17,22 +17,14 @@ button.addEventListener('click', () => {
 
   const userName = prompt('What is your name?');
 
-  console.log(userName);
+  const question1 = prompt(userName + ', ' + 'do you like hiking?');
 
-  const question1 = prompt('Do you like hiking?');
+  const question2 = prompt(userName + ', ' + 'is your favorite color blue?');
 
-  console.log(question1);
-
-  const question2 = prompt('Is your favorite color blue?');
-
-  console.log(question2);
-
-  const question3 = prompt('Are you from out of state?');
-
-  console.log(question3);
+  const question3 = prompt(userName + ', ' + 'are you from out of state?');
 });
 
 // set event listeners to update state and DOM
 let score = 0;
 
-result.textContent = score;
+result.textContent = score++;
