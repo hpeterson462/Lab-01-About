@@ -7,10 +7,15 @@ const test = QUnit.test;
 test('time to test a function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const answer1 = 'y';
+    const answer2 = 'yes';
+    const answer3 = 'Y';
+    const answer4 = 'yeah';
+    const expected = 'Yes';
 
     //Act 
     // Call the function you're testing and set the result to a const
+    const
     const actual = false;
 
     //Expect
