@@ -5,6 +5,7 @@ body {
     --color1: #ffb90f;
     --color2: #db8a0f;
     --color3: #00c5cd;
+    --color4: #b0b0b0;
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -47,23 +48,38 @@ footer {
 
 
 h2 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
-    display: flex;
-
+    font-family: 'Rye', cursive;
 }
 
 content {
     width: 80%;
 }
 
+img {
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
 button {
     font-size: 24px;
     cursor: pointer;
+    border: solid var(--color4);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
 }
 
 button:hover {
     background-color: var(--color1);
+}
+
+#result-span {
+    margin: 5px;
+    padding: 2px;
 }
   
 footer {

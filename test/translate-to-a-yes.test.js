@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import example from '../example.js';
-import { translateToATest } from '../utilities.js';
+import { translateToATest } from './utilities.js';
 
 const test = QUnit.test;
 
@@ -15,8 +15,7 @@ test('time to test a function', (expect) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const
-    const actual = false;
+    const actual = true(answer1, answer2);
 
     //Expect
     // Make assertions about what is expected versus the actual result
